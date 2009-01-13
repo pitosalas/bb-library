@@ -1,0 +1,45 @@
+php_value auto_prepend_file none
+php_value magic_quotes_gpc off
+
+RewriteEngine On
+RewriteRule robots.txt               robots.php
+RewriteRule sitemap.xml              sitemap.php
+
+RewriteRule folder/([0-9]+)(-[^\.]*)*$         index.php?type=folder&fid=$1 [QSA]
+RewriteRule folder/([0-9]+)(-[^\.]*)*\.opml$   folder_opml.php?fid=$1 [QSA]
+RewriteRule folder/([0-9]+)(-[^\.]*)*\.js$     folder_js.php?fid=$1 [QSA]
+
+RewriteRule item/([0-9]+)(-[^\.]*)*$           index.php?type=item&iid=$1 [QSA]
+RewriteRule item/([0-9]+)(-[^\.]*)*\.xml$      item_xml.php?iid=$1 [QSA]
+RewriteRule item/([0-9]+)(-[^\.]*)*\.opml$     item_xml.php?iid=$1 [QSA]
+RewriteRule item/([0-9]+)(-[^\.]*)*\.jpg$      item_image.php?iid=$1 [QSA]
+
+RewriteRule organization/?$          index.php?type=org [QSA]
+RewriteRule organization/([0-9]+)$   index.php?type=org&oid=$1 [QSA]
+
+RewriteRule user/?$                  index.php?type=user [QSA]
+RewriteRule user/([0-9]+)$           index.php?type=user&pid=$1 [QSA]
+
+RewriteRule top100/?$                top100.php [QSA]
+RewriteRule top100\.opml$            top_opml.php?count=100 [QSA]
+RewriteRule top10\.opml$             top_opml.php?count=10 [QSA]
+
+RewriteRule news$                    index.php?type=news [QSA]
+RewriteRule news/([0-9]+)$           index.php?type=news&niid=$1 [QSA]
+RewriteRule news\.xml$               news_xml.php [QSA]
+RewriteRule news\.js$                news_js.php [QSA]
+
+RewriteRule new_additions\.js$       new_additions_js.php [QSA]
+
+RewriteRule opml_ping$               opml_ping.php [QSA]
+
+RewriteRule search$                  search.php [QSA]
+RewriteRule tags_cloud$              tags.php?cmd=cloud [QSA]
+RewriteRule tag/(.+)$                tags.php?cmd=find&tag=$1 [QSA]
+RewriteRule tasks$                   tasks.php [QSA]
+RewriteRule pulse$                   pulse.php [QSA]
+
+# Virtual site-related images
+RewriteCond %{DOCUMENT_ROOT}/sites/%{SERVER_NAME} -d
+RewriteRule (images/people/[^/]+\.img)$ sites/%{SERVER_NAME}/$1 [L]
+RewriteRule (images/people/[^/]+\.img)$ sites/default/$1 [L]

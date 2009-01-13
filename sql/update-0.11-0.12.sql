@@ -1,0 +1,4 @@
+ALTER TABLE Item
+  ADD useFlashPlayer			BIT NOT NULL DEFAULT 0,
+  ADD useITunesURL				BIT NOT NULL DEFAULT 0,
+	ADD usePlayButtons			BIT NOT NULL DEFAULT 0;

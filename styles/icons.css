@@ -1,0 +1,14 @@
+.folder_item img.folder { width: 111px; height: 86px; background: url(images/folder.gif) 23px 11px no-repeat; }
+
+img.rss         { width: 15px; height: 15px; background: url(images/rss_15.gif) 0 0 no-repeat; }
+img.rss_small   { width: 13px; height: 13px; background: url(images/rss_13.gif) 0 0 no-repeat; }
+img.opml        { width: 15px; height: 15px; background: url(images/opml_15.gif) 0 0 no-repeat; }
+img.opml_small  { width: 13px; height: 13px; background: url(images/opml_13.gif) 0 0 no-repeat; }
+img.person      { width: 16px; height: 16px; background: url(images/person_16.png) 0 0 no-repeat; }
+img.web				  { width: 15px; height: 15px; background: url(images/web_15.gif) 0 0 no-repeat; }
+img.web_small	  { width: 13px; height: 13px; background: url(images/web_13.gif) 0 0 no-repeat; }
+
+img.itunes 		  { width: 75px; height: 18px; background: url(images/itunes-button.gif) 0 0 no-repeat; }
+img.play-button { width: 22px; height: 22px; background: url(images/play-button.gif) 0 0 no-repeat; }
+
+img.folder-link { width: 16px; height: 16px; background: url(images/folder-link.png) 0 0 no-repeat; }

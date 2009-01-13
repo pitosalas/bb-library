@@ -1,0 +1,53 @@
+Prerequisites
+-------------
+
+* Apache HTTP Server (2.0.x or later) with 'mod_rewrite' module installed
+* MySQL Database Server (4.1.20 or later)
+
+Installation Steps
+------------------
+
+1. Extract the contents of the "feedlibrary" folder from the distribution archive
+   to a directory on the web server. Make sure the .htaccess file is extracted
+   along with other contents of the archive (it has to be in the root directory).
+
+2. Create an empty mysql database and run the following scripts from 'sql' folder
+		* 1-ddl-script.sql 	  -- main structure
+		* 3-data-script.sql   -- data script
+		* 4-testdata-script.sql and 5-testdata-script-2.sql, if you wish some test data
+
+3. Edit the global configuration file (sites/config.php). It is the
+   default for all sites sharing this installation. If you have the only site,
+   this is the only file to modify.
+		* Specify your database details
+		* Change the paths to mysql and mysqldump applications
+		* Configure Amazon AST if you need thumbnails support
+
+4. Ensure that all folders under sites/default are writable by the web server:
+    * backups             -- database backups
+    * images/people       -- pictures of users
+    * sessions            -- application sessions
+    * simple_cache        -- feed preview caches
+    * smarty              -- custom configuration files
+    * templates_c         -- pre-compiled templates
+    * uploads             -- user uploads
+
+5. Update your web server configuration with new virtual host. Assuming that
+   the application root is '/var/httpd/library' and the name of the host is
+   'lib.myhost.org', the virtual host config looks as simple as this:
+   
+     <VirtualHost *:80>
+       ServerName   lib.myhost.org
+       DocumentRoot /var/httpd/library
+     </VirtualHost>
+   
+6. Ensure that the web server is allowed to read local .htaccess files
+
+Periodical tasks
+----------------
+
+The application needs a pulse signal to perform some of the tasks in the background.
+The tasks are Amazon AST cache cleaning, feed meta-data updates, database backups etc.
+We recommend using crontab and 'wget' to ping the application every minute.
+
+wget --spider -q http://your.library.url/pulse

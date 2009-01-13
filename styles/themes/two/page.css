@@ -1,0 +1,39 @@
+@import url("../../defaults.css");
+@import url(icons.css);
+
+#spinner.root { background: url(images/spinner.gif); }
+
+body { margin: 10px 0; background: url(images/canvas_fill.png); }
+
+#page { margin: 0 auto; padding: 0; background: #fff; border: 1px solid #aab88f; }
+#header {
+	height: 66px;
+	text-align: left;
+}
+#header h1 a {
+	font: normal 24px Tahoma, Arial, Verdana, sans-serif;
+	color: #fd9a35;
+}
+#header h1 {
+	text-align: center;
+	margin: 24px 0 18px 0;
+	padding: 0;
+}
+#header #help1 {
+	display: block;
+	top: 18px;
+	margin-left: 805px; 
+	width: 99px;
+	height: 56px;
+	position: absolute;
+	background: url(../../../images/powered_by.gif) 100% 0 no-repeat;
+}
+
+#main_part { background: #d1e2ae; border-top: 1px solid #aab88f; }
+
+#footer { background: #d1e2ae; }
+#footer table { background: #bad382; border: 1px solid #a8be76; margin: 9px; padding: 0 9px;width: 892px; }
+#footer td { font-size: 10px; color: #000; padding: 9px; }
+#footer a { color: #444;  }
+
+a { color: #000; }

@@ -1,0 +1,129 @@
+@import url(icons.css);
+@import url(license.css);
+
+#spinner { width: 16px; height: 16px; background: url(../images/spinner.gif); margin-right: 5px; }
+
+/* Page */
+* { font-family: tahoma, arial, verdana, sans-serif; font-size: 11px; }
+.layout { border-collapse: collapse; margin: 0; padding: 0; border: 0px solid #fff; }
+.fullwidth { width: 910px; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+.clear { clear: left; }
+thead { color: #d00111; }
+
+/* Tables */
+.tblCntIconTitle { width: 520px; }
+.tblCntIconTitle td { padding: 4px 5px; }
+.tblCntIconTitle .counter { width: 20px; text-align: center; }
+.tblCntIconTitle .icon { width: 16px; text-align: center; }
+td input { margin-left: 0px; }
+
+/* Infoblock */
+.info_block .opml_folder_info { margin-top: 10px; }
+.info_block .controls { text-align: right; margin-left: 10px; }
+
+/* Sidebar */
+.sidebar input { width: 150px; }
+.sidebar form { margin: 0; padding: 0; }
+.sidebar form#search input { margin-top: 5px; }
+
+/* Search */
+#searchAdv { margin: 10px 0 0 0; padding: 5px; }
+#searchAdv h2 { margin: 0 0 5px 0; padding: 0; }
+#searchAdv ul { list-style: none; margin: 0; padding: 0 0 0 20px; }
+#searchAdv .section { margin: 5px 0 0 0; }
+
+/* Tasks */
+#tasks { width: 520px; }
+#tasks .title { width: 150px; }
+#tasks .period { width: 100px; }
+#tasks .runnow { width: 5em; text-align: center; }
+
+input[type="text"], input[type="password"] { padding-left: 2px; padding-right: 2px; }
+
+/* Bulleted list */
+.bulleted li { padding-left: 22px; background: url(images/bullet.gif) 3px 3px no-repeat; }
+
+/* News Bar */
+.bulleted#news li { margin-bottom: 3px; }
+
+/* Tags Cloud */
+.tag_1 { font-size: 120%; }
+.tag_2 { font-size: 140%; }
+.tag_3 { font-size: 160%; }
+.tag_4 { font-size: 180%; }
+.tag_5 { font-size: 200%; }
+
+/* Feed preview */
+#feed_preview { clear: both; }
+#feed_preview .handle { float: left; margin-right: 5px; }
+* html #feed_preview .handle { margin-top: 3px; }
+#feed_preview .handle img { width: 9px; height: 9px; }
+#feed_preview h2 { margin-left: 14px; }
+#feed_preview a.collapsed img { background: url(images/plus.gif) 0 0 no-repeat; }
+#feed_preview a.expanded img { background: url(images/minus.gif) 0 0 no-repeat; }
+#feed_preview .body { clear: both; display: none; }
+
+#feed_preview .header { border-top: 1px solid #b1afaf; padding: 5px 0; overflow: hidden; height: 1%; }
+#feed_preview .header h3 { padding: 0; margin: 0; font-weight: bold; font-size: 14px; color: #444; float: left; }
+#feed_preview .header .controls { float: right; vertical-align: middle; }
+#feed_preview_items { border-top: 1px dotted #dbdce0; padding-top: 10px; }
+
+/* Forms */
+.field { width: 200px; }
+.short-field { width: 50px; }
+textarea.field { width: 400px; height: 100px; }
+
+/* Login form */
+#loginForm { display: none; }
+#path_to_home #login_info a { display: inline; padding: 0; margin: 0; float: none; }
+
+/* Path to home */
+#path_to_home a.simple { display: inline; float: none; padding-left: 0; padding-right: 0; }
+
+#foreign_folders img { width: 8px; height: 8px; background: url(../images/pure_delete_gray.jpg) 0 0 no-repeat; }
+
+/* News item */
+.news_item .author { float: left; margin: 0 10px 10px 0; background: url(images/noimg.gif) #e0e0e0 0 0 no-repeat; width: 50px; height: 75px; }
+.news_item .posted_by { clear: left; }
+
+/* Status on item add/edit page */
+.status { color: #888; }
+.info { padding: 10px; margin: 11px 0; }
+
+.info_block { overflow: hidden; }
+.info_block .meta ul {
+	list-style: none;
+}
+
+/* Owner */
+#owner_photo { float: left; background: url(images/noimg.gif) #e0e0e0 0 0 no-repeat; width: 50px; height: 75px; margin: 0 10px 10px 0; }
+#owner_info { text-align: left; }
+#owner_info h2, #owner_info h2 a { margin: 0; text-decoration: underline; font-size: 12px; color: #d00111; }
+#owner_info #tags { color: #4d4d4d; }
+#owner_info #description { color: #6f6f6f; }
+
+/* Users */
+#people .name { width: 150px; }
+#people .email { width: 200px; }
+#people .type { width: 70px; }
+#people .last_login { width: 100px; }
+
+.item_count { color: #666; }
+
+a.itunes { margin-left: 10px; }
+
+.enclosure { padding-bottom: 5px; }
+
+/* Website preview */
+#website_preview { width: 500px; height: 500px; }
+
+/* New version */
+#new_version { text-align: center; padding-bottom: 10px; color: green; }
+
+/* Post Announcement */
+#post_announcement, #pa_form { margin: 10px 0 0 0; }
+
+/* Folders */
+.folder_item .title { display: block; line-height: 2ex; height: 4ex; overflow: hidden; color: #000; text-decoration: underline; margin: 5px; }

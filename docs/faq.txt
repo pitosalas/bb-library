@@ -1,0 +1,14 @@
+Frequently Asked Questions
+--------------------------
+
+* Site thumbnails not appearing, but I saw them on your site.
+
+  We use paid Amazon Thumbnails service to display site thumbnails within
+  the application. On our site we use our own account information and pay
+  for every image we display. On your site, you need to use your Amazon
+  services account to have them.
+
+  Once you have your Amazon AWS account ready, enter your keys in the
+  sites/config.php file, and verify that the cache directory is writable
+  by your web server.
+

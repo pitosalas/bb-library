@@ -1,0 +1,42 @@
+@import url("defaults.css");
+
+body { margin: 10px 0; padding: 0; }
+
+* { font-family: tahoma, arial, verdana, sans-serif; font-size: 11px; }
+
+.layout { border-collapse: collapse; margin: 0; padding: 0; border: 0px solid #fff; }
+.fullwidth { width: 910px; }
+
+#page { margin: 0 auto; }
+#header { height: 99px; background: url(../images/header_fill.gif); text-align: left;}
+#header h1 a {
+	font: normal 24px Tahoma, Arial, Verdana, sans-serif;
+	color: #B80006;
+}
+#header h1 {
+	text-align: center;
+	margin: 29px 0 0 0;
+	padding-top: 21px;
+	height: 39px;
+}
+#header #help1 {
+	display: block;
+	top: 40px;
+	margin-left: 810px; 
+	width: 99px;
+	height: 56px;
+	position: absolute;
+	background: url(../images/powered_by.gif) #fff 100% 0 no-repeat;
+}
+
+#footer { height: 85px; background: url(../images/footer_fill.gif); }
+#footer td { font-size: 11px; color: #bcbcbc; }
+#footer a { color: #b0b0b0;  }
+#footer table { margin-top: 44px; padding: 0 9px; }
+
+a { color: #4d4d4d; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.clear { clear: left; }
+
+thead { color: #d00111; }

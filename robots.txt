@@ -1,0 +1,4 @@
+# Rapid-fire indexing may cause serious troubles
+
+User-agent: *
+Disallow: /

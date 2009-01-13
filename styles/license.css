@@ -1,0 +1,9 @@
+#license { margin: 20px 190px; }
+#license P { text-indent: 0; margin-bottom: 0.17in; direction: ltr; color: #000000; text-align: justify; }
+#license H1 { text-align: center; }
+#license #accept_buttons { text-align: center; }
+
+#license.expired { margin: 150px 0; }
+#license.expired h1, #eval_warning h1 { font-size: 100%; margin: 0; padding: 0; color: red; }
+#license.expired, #eval_warning td { text-align: center; padding: 0 0 10px 0; }
+#license.expired p { text-indent: 0; margin: 0; text-align: center; }

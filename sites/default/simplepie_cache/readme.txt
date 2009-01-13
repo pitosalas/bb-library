@@ -1,0 +1,1 @@
+This directory is a cache of Simplepie Feed parser.

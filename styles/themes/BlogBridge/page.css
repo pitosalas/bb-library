@@ -1,0 +1,39 @@
+@import url("../../defaults.css");
+@import url(icons.css);
+
+body { margin: 0; padding: 0; }
+
+#page { margin: 0 auto; padding: 0; background: #fff; }
+
+#header {
+	height: 84px;
+	text-align: left;
+	background: url(images/header_fill.png) #fff 0 0 repeat-x;
+}
+#header h1 a {
+	font: normal 18px Tahoma, Arial, Verdana, sans-serif;
+	color: #4345a8;
+}
+#header h1 {
+	text-align: center;
+	display: block;
+	margin: -1px 0 0 0;
+	padding: 50px 0 5px 0;
+	height: 18px;
+}
+#header #help1 {
+	display: block;
+	top: 0px;
+	margin-left: 818px; 
+	width: 82px;
+	height: 74px;
+	position: absolute;
+	background: url(images/powered_by.png) 100% 0 no-repeat;
+}
+
+#footer { height: 55px; background: url(images/footer_border.gif) 0 10px repeat-x; }
+#footer td { font-size: 11px; color: #4d4d4d; }
+#footer a { color: #b0b0b0;  }
+#footer table { margin-top: 21px; padding: 0 9px; }
+
+a { color: #4244a9; }
